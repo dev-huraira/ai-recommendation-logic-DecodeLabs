@@ -27,29 +27,6 @@ Step 4: Filtering — Top 3 results returned
 
 ---
 
-### PDF Concepts Implemented
-
-| PDF Page | Concept | Status |
-|---|---|---|
-| Page 7 | IPO Framework Input Process Output | ✅ |
-| Page 8 | Content-Based Filtering chosen | ✅ |
-| Page 9 | Vector Mapping shared vocabulary | ✅ |
-| Page 10 | Binary overlap limitation solved | ✅ |
-| Page 11 | TF-IDF Feature Extraction | ✅ |
-| Page 12 | TF-IDF Mathematical Formula | ✅ |
-| Page 13 | Similarity Engine Process Phase | ✅ |
-| Page 14 | Euclidean Distance NOT used | ✅ |
-| Page 15 | Cosine Similarity Industry Standard | ✅ |
-| Page 16 | Score range 0 to 1 | ✅ |
-| Page 17 | 4-Step Ranking Pipeline | ✅ |
-| Page 18 | Step 1 Ingestion Step 2 Scoring | ✅ |
-| Page 19 | Step 3 Sorting Step 4 Filtering Top-N | ✅ |
-| Page 20 | Cold Start Problem detected | ✅ |
-| Page 21 | Cold Start bypass implemented | ✅ |
-| Page 22 | Tech Stack Recommender assignment | ✅ |
-| Page 23 | Full execution pipeline | ✅ |
-
----
 
 ### Tech Stack
 - Backend: Python, Flask
@@ -58,7 +35,7 @@ Step 4: Filtering — Top 3 results returned
 - Method: Content-Based Filtering
 - Dataset: raw_skills.csv (15 job roles)
 - Frontend: HTML, CSS, Vanilla JavaScript
-- Theme: Black and White
+- Theme: Light with green accents
 
 ---
 
@@ -67,8 +44,8 @@ Step 4: Filtering — Top 3 results returned
 Step 1 - Install Python 3.8 or higher from python.org
 
 Step 2 - Clone the repository:
-git clone https://github.com/dev-huraira/ai-recommendation-logic
-cd ai-recommendation-logic
+git clone https://github.com/dev-huraira/ai-recommendation-logic-DecodeLabs
+cd ai-recommendation-logic-DecodeLabs
 
 Step 3 - Install dependencies:
 pip install flask pandas scikit-learn
@@ -149,5 +126,5 @@ ai-recommendation-logic/
 - Program : DecodeLabs Industrial Training
 - Batch   : 2026
 - Project : Project 3 - AI Recommendation Logic
-- Contact : decodelabs.tech@gmail.com
-- Website : www.decodelabs.tech
+- Contact : huraira3076@gmail.com
+- Website : https://devhuraira.vercel.app/

@@ -7,9 +7,9 @@
     <style>
         body {
             margin: 0;
-            background: #000000;
-            color: #FFFFFF;
-            font-family: 'Courier New', Courier, monospace;
+            background: #FFFFFF;
+            color: #000000;
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
         }
         .container {
             max-width: 900px;
@@ -17,60 +17,61 @@
             padding: 24px;
         }
         .header {
-            border-bottom: 1px solid #222222;
+            border-bottom: 2px solid #22c55e;
             padding-bottom: 24px;
             margin-bottom: 32px;
         }
         .project-label {
-            color: #666666;
+            color: #15803d;
             font-size: 12px;
         }
         .title {
-            color: #FFFFFF;
+            color: #000000;
             font-size: 28px;
             font-weight: bold;
             margin-top: 8px;
         }
         .subtitle {
-            color: #666666;
+            color: #0f766e;
             font-size: 14px;
             margin-top: 6px;
         }
         .panel {
-            background: #111111;
-            border: 1px solid #333333;
+            background: #f0fdf4;
+            border: 1px solid #4ade80;
             border-radius: 4px;
             padding: 24px;
         }
         .panel-title {
-            color: #FFFFFF;
+            color: #14532d;
             font-size: 14px;
             margin-bottom: 16px;
         }
         .panel-subtitle {
-            color: #666666;
+            color: #166534;
             font-size: 12px;
             margin-bottom: 20px;
         }
         #skillInput {
             width: 100%;
-            background: #000000;
-            border: 1px solid #333333;
-            color: #FFFFFF;
+            background: #FFFFFF;
+            border: 1px solid #4ade80;
+            color: #000000;
             padding: 12px;
             border-radius: 4px;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
             font-size: 14px;
             box-sizing: border-box;
             outline: none;
         }
         #skillInput:focus {
-            border-color: #FFFFFF;
+            border-color: #16a34a;
+            box-shadow: 0 0 0 2px #bbf7d0;
         }
         #skillsTags {
             min-height: 48px;
-            background: #000000;
-            border: 1px solid #333333;
+            background: #FFFFFF;
+            border: 1px solid #4ade80;
             border-radius: 4px;
             padding: 8px;
             margin-top: 8px;
@@ -80,9 +81,9 @@
             box-sizing: border-box;
         }
         .tag {
-            background: #1A1A1A;
-            border: 1px solid #333333;
-            color: #FFFFFF;
+            background: #dcfce7;
+            border: 1px solid #22c55e;
+            color: #14532d;
             padding: 4px 10px;
             border-radius: 2px;
             font-size: 12px;
@@ -91,65 +92,80 @@
             gap: 6px;
         }
         .remove-tag {
-            color: #666666;
+            color: #b91c1c;
             cursor: pointer;
             background: none;
             border: none;
             font-size: 14px;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
             padding: 0;
             line-height: 1;
         }
+        .remove-tag:hover {
+            color: #dc2626;
+        }
         #skillsCounter {
-            color: #666666;
+            color: #166534;
             font-size: 12px;
             margin-top: 8px;
         }
         #recommendButton {
             width: 100%;
-            background: #FFFFFF;
-            color: #000000;
+            background: #16a34a;
+            color: #FFFFFF;
             padding: 14px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             font-size: 14px;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
             font-weight: bold;
             margin-top: 16px;
         }
         #recommendButton:hover {
-            background: #CCCCCC;
+            background: #15803d;
         }
         #resultsSection {
             margin-top: 32px;
             display: none;
         }
         .results-title {
-            color: #FFFFFF;
+            color: #000000;
             font-weight: bold;
             font-size: 14px;
             margin-bottom: 8px;
         }
         .results-subtitle {
-            color: #666666;
+            color: #0f766e;
             font-size: 12px;
             margin-bottom: 6px;
         }
         .results-meta {
-            color: #666666;
+            color: #166534;
             font-size: 11px;
             margin-bottom: 12px;
         }
         .result-card {
-            background: #111111;
-            border: 1px solid #333333;
+            background: #f0fdf4;
+            border: 1px solid #4ade80;
             border-radius: 4px;
             padding: 20px;
             margin-top: 12px;
             display: flex;
             justify-content: space-between;
             gap: 16px;
+        }
+        .result-card:nth-child(1) .rank-badge {
+            color: #15803d;
+            font-weight: bold;
+        }
+        .result-card:nth-child(2) .rank-badge {
+            color: #0d9488;
+            font-weight: bold;
+        }
+        .result-card:nth-child(3) .rank-badge {
+            color: #1d4ed8;
+            font-weight: bold;
         }
         .result-left {
             width: 70%;
@@ -160,10 +176,10 @@
         }
         .rank-badge {
             font-size: 11px;
-            color: #666666;
+            color: #15803d;
         }
         .job-role {
-            color: #FFFFFF;
+            color: #000000;
             font-weight: bold;
             font-size: 18px;
             margin-top: 4px;
@@ -175,51 +191,65 @@
             gap: 8px;
         }
         .match-percent {
-            color: #FFFFFF;
+            color: #15803d;
             font-weight: bold;
             font-size: 24px;
         }
         .match-label {
-            color: #666666;
+            color: #166534;
             font-size: 10px;
             margin-top: 2px;
         }
         .progress-bar {
             width: 100%;
             height: 4px;
-            background: #333333;
+            background: #bbf7d0;
             border-radius: 2px;
             margin-top: 10px;
             overflow: hidden;
         }
         .progress-fill {
             height: 4px;
-            background: #FFFFFF;
+            background: #16a34a;
             border-radius: 2px;
             width: 0;
         }
         .message-box {
-            background: #111111;
-            border: 1px solid #333333;
+            background: #fef9c3;
+            border: 1px solid #eab308;
             border-radius: 4px;
             padding: 20px;
             margin-top: 16px;
             display: none;
         }
         .message-title {
-            color: #FFFFFF;
+            color: #854d0e;
             font-weight: bold;
         }
         .message-subtext {
-            color: #666666;
+            color: #166534;
             margin-top: 8px;
             font-size: 12px;
         }
+        #errorBox {
+            background: #fee2e2;
+            border-color: #ef4444;
+        }
+        #errorBox .message-title {
+            color: #b91c1c;
+        }
+        #coldStartBox {
+            background: #fff7ed;
+            border-color: #f97316;
+        }
+        #coldStartBox .message-title {
+            color: #c2410c;
+        }
         .footer {
-            border-top: 1px solid #222222;
+            border-top: 1px solid #4ade80;
             padding-top: 24px;
             margin-top: 48px;
-            color: #444444;
+            color: #166534;
             font-size: 11px;
             text-align: center;
         }
